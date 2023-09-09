@@ -1,4 +1,19 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+footer {
+    height: 176px;
+
+    @include mobile {
+        height: auto;
+    }
+    .content {
+        height: 176px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mobile{
+            height: auto;
+            display: block;
+            margin: 28px;
+        }
+    }
 }

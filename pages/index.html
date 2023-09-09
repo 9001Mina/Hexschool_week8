@@ -9,49 +9,160 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
+    <!-- banner -->
+    <div class="banner">
+      <div class="bannerNews d-xxl-block d-xl-none d-none">
+        <p class="text-white fs-6 pb-2">最新消息！新版本 v15.4 釋出，搶先體驗！</p>
+        <div class="border-bottom border-white"></div>
       </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+      <div class="bannerStudio d-xxl-block d-xl-none d-none">
+        <div class="border-top border-white"></div>
+        <p class="text-white fs-6 pb-2">ALPHABOX+ STUDIO</p>
+      </div>
+      <div class="bannerCopyright d-xxl-block d-xl-none d-none">
+        <p class="fs-6 pb-2">Copyright © 2023 Hexschool.</p>
+      </div>
+        <div class="row">
+          <div class="col-12 position-relative">
+            <div class="brand d-flex flex-column align-items-center">
+              <img class="brandCircle" src="/assets/images/circle.png" alt="品牌圖形">
+              <div class="brandText font-shrikhand d-flex justify-content-between">
+                <span>A</span>
+                <span>L</span>
+                <span>P</span>
+                <span>H</span>
+                <span>A</span>
+                <span>B</span>
+                <span>O</span>
+                <span>X</span>
+                <span>+</span>
+              </div>
+              <p class="caption bold mb-4 text-center">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+              <div class="position-absolute d-flex flex-column align-items-center top-50">
+                <p class="text-white fs-6 pb-2 d-xxl-none d-xl-block">最新消息！新版本 v15.4 釋出，搶先體驗！</p>
+                <div class="border-bottom border-white w-100 mb-2 d-xxl-none d-xl-block"></div>
+                <p class="text-white fs-6 pb-2 d-xxl-none d-xl-block">ALPHABOX+ STUDIO</p>
+                <p class="text-white pb-2 d-xxl-none d-xl-block">Copyright © 2023 Hexschool.</p>
+              </div>
+            </div>
+            <ul class="boxGroup list-unstyled d-flex flex-xl-wrap">
+              <li class="aiBox col-xxl-3 col-xl-6 col-lg-6 col-12">
+                <div class="aiImg1">
+                  <p class="aiName font-shrikhand">Diane</p>
+                  <img src="/assets/images/diane.png" class="img-fluid d-xxl-block d-none" alt="AI人像">
+                  <img src="/assets/images/mobile/diane_mobile.png" class="img-fluid d-xxl-none d-xl-block imgHover" alt="AI人像">
+                </div>
+              </li>
+              <li class="aiBox col-xxl-3 col-xl-6 col-lg-6 col-12">
+                <div class="aiImg2">
+                  <p class="aiName font-shrikhand">Felix</p>
+                  <img src="/assets/images/felix.png" class="img-fluid d-xxl-block d-none" alt="AI人像">
+                  <img src="/assets/images/mobile/felix_mobile.png" class="img-fluid d-xxl-none d-xl-block imgHover" alt="AI人像">
+                </div>
+              </li>
+              <li class="aiBox col-xxl-3 col-xl-6 col-lg-6 col-12">
+                <div class="aiImg3">
+                  <p class="aiName font-shrikhand">Karina</p>
+                  <img src="/assets/images/karina.png" class="img-fluid d-xxl-block d-none" alt="AI人像">
+                  <img src="/assets/images/mobile/karina_mobile.png" class="img-fluid d-xxl-none d-xl-block imgHover" alt="AI人像">
+                </div>
+              </li>
+              <li class="aiBox col-xxl-3 col-xl-6 col-lg-6 col-12">
+                <div class="aiImg4">
+                  <p class="aiName font-shrikhand">Vito</p>
+                  <img src="/assets/images/vito.png" class="img-fluid d-xxl-block d-none" alt="AI人像">
+                  <img src="/assets/images/mobile/vito_mobile.png" class="img-fluid d-xxl-none d-xl-block imgHover" alt="AI人像">
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
     </div>
+    <div class="carouselBlock overflow-hidden position-relative">
+      <div class="sub-line">1</div>
+      <div class="carousel">
+        
+        <div class="carouselTitle">
+          <div class="horizontal-line"></div>
+          <div class="carouselTitle-cn text-white fw-bold d-flex justify-content-between">
+            <span>什</span>
+            <span>麼</span>
+            <span>是</span>
+          </div>
+          <div class="carouselTitle-en text-white fw-bold d-flex justify-content-between">
+            <span>A</span>
+            <span>L</span>
+            <span>P</span>
+            <span>H</span>
+            <span>A</span>
+            <span>B</span>
+            <span>O</span>
+            <span>X</span>
+            <span>+</span>
+          </div>
+
+        </div>
+        
+        <div class="container">
+          <div class="row">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide d-flex justify-content-center">
+                  <img src="/assets/images/carousel.png" alt="輪播圖片" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="輪播圖片" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="輪播圖片" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="輪播圖片" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="輪播圖片" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" alt="輪播圖片" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+      
+    </div>
+
+
+
+    
+    
 
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "flip",
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

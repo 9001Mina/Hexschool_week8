@@ -1,0 +1,23 @@
+// Swiper
+@import url('https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
+// jQuery
+@import url('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js');
+
+*,*:before, *:after{
+    box-sizing: border-box;
+    text-decoration: none;
+    // outline: 1px solid red;
+}
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    display: block;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}

@@ -1,11 +1,23 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
+@import "../../node_modules/bootstrap";
 
+@import './base/base';
+@import './base/fontStyle';
+
+@import './components/dropdowns';
+@import './components/nav';
+
+@import './mixins/bg-gradient';
+@import './mixins/mixins';
+
+@import './utils/custom-color';
+@import './utils/helpers';
+
+@import './vendors/swiper';
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
-
 @import './pages/index.scss';
 
-@import "../../node_modules/bootstrap";

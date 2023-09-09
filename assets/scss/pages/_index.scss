@@ -1,3 +1,427 @@
-.index-title {
-  font-size: 100px;
+.banner{
+    max-width: 100%;
+    height: auto;
+    background-image: url(/assets/images/home_background.png);
+    background-size: cover;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    @include lg_desktops{
+        height: 1680px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    @include pad{
+        padding-left: 40px;
+        padding-right: 40px;
+        height: auto;
+    }
+
+    @include mobile{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .bannerNews{
+        width: 416px;
+        position: relative;
+        top: 252px;
+
+        @include lg_desktops{
+            width: 350px;
+        }
+        
+    }
+    .bannerStudio{
+        width: 416px;
+        position: relative;
+        margin-left: auto;
+        top: 56px;
+
+        @include lg_desktops{
+            width: 350px;
+        }
+        
+    }
+    .bannerCopyright{
+        width: 416px;
+        position: relative;
+        margin-left: auto;
+        top: 188px;
+        color: #ad93cf;
+
+        @include lg_desktops{
+            width: 350px;
+        }
+        
+    }
+    .brand{
+        @include pad{
+            margin-bottom: 32px;
+        }
+    }
+    .brandCircle{
+        width: 196px;
+        height: 196px;
+        margin-bottom: 56px;
+
+        @include lg_desktops{
+            margin-top: 56px;
+        }
+    }
+    .brandText{
+        width: 832px;
+        font-size: $h1-font-size;
+        color: $third;
+
+        @include pad{
+            max-width: 100%;
+        }
+        @include mobile{
+            font-size: $h5-font-size;
+
+        }
+
+
+    }
+    .caption{
+        letter-spacing: 16px;
+        color: $third;
+    }
+
+    .boxGroup{
+        max-width: 100%;
+        height: 476px;
+        background-color: transparent;
+        top: -345px;
+        z-index: 100;
+
+        @include lg_desktops{
+            position: relative;
+            top: 450px;
+        }
+        @include desktops{
+            top: 350px;
+            flex-wrap: wrap;
+        }
+        @include pad{
+            position: static;
+            height: auto;
+        }
+        .aiBox{
+            max-width: 100%;
+            position: relative;
+
+            
+            
+            .aiImg1{
+                width: 100%;
+                height: auto;
+                position: absolute;
+                bottom: -120px;
+                z-index: 100;
+                padding-right: 16px;
+                display: flex;
+                justify-content: center;
+                
+                @include pad{
+                    position: static;
+                    padding-right: 0;
+                    margin-bottom: 16px;
+                }
+            }
+            .aiImg1:hover{
+                transform: scale(1);
+                padding-right: 0;
+                box-shadow: #ad93cf 0px 0px 10px 5px;
+
+                @include pad{
+                    box-shadow: none;
+                }
+            }
+            .imgHover:hover, :active{
+                box-shadow: #ad93cf 0px 0px 10px 5px;
+            }
+            .aiName{
+                position: absolute;
+                z-index: 101;
+                color: $third;
+                text-align: center;
+                font-size: $h1-font-size;
+            }
+            .aiImg2{
+                width: 100%;
+                height: auto;
+                position: absolute;
+                bottom: -120px;
+                z-index: 100;
+                padding-right: 16px;
+                padding-left: 16px;
+                display: flex;
+                justify-content: center;
+
+                @include lg_desktops{
+                    padding-right: 0;
+                }
+                @include pad{
+                    position: static;
+                    padding-left: 0;
+                    margin-bottom: 16px;
+                }
+            }
+            .aiImg2:hover{
+                transform: scale(1);
+                padding-right: 0;
+                padding-left: 0;
+                box-shadow: #ad93cf 0px 0px 10px 5px;
+
+                @include pad{
+                    box-shadow: none;
+                }
+            }
+            .aiImg3{
+                width: 100%;
+                height: auto;
+                position: absolute;
+                bottom: -120px;
+                z-index: 100;
+                padding-right: 16px;
+                padding-left: 16px;
+                display: flex;
+                justify-content: center;
+
+                @include lg_desktops{
+                    bottom: -500px;
+                    padding-left: 0;
+                }
+                @include desktops{
+                    bottom: -405px;
+                    padding-left: 0;
+                }
+                @include pad{
+                    position: static;
+                    padding-right: 0;
+                    margin-bottom: 16px;
+                }
+            }
+            .aiImg3:hover{
+                transform: scale(1);
+                padding-right: 0;
+                padding-left: 0;
+                box-shadow: #ad93cf 0px 0px 10px 5px;
+
+                @include pad{
+                    box-shadow: none;
+                }
+            }
+            .aiImg4{
+                width: 100%;
+                height: auto;
+                position: absolute;
+                bottom: -120px;
+                z-index: 100;
+                padding-left: 16px;
+                display: flex;
+                justify-content: center;
+
+                @include lg_desktops{
+                    bottom: -500px;
+                }
+                @include desktops{
+                    bottom: -405px;
+                }
+                @include pad{
+                    position: static;
+                    padding-left: 0;
+                    margin-bottom: 16px;
+                }
+            }
+            .aiImg4:hover{
+                transform: scale(1);
+                padding-left: 0;
+                box-shadow: #ad93cf 0px 0px 10px 5px;
+
+                @include pad{
+                    box-shadow: none;
+                }
+            }
+        }
+            
+            
+            
+    }
+    
+    
 }
+
+.carouselBlock{
+    @include gradient-x(#300871, #000);
+    max-width: 100%;
+    height: 1080px;
+
+
+    // .leftImages{
+    //     position: absolute;
+    //     z-index: 1;
+    //     height: 100%;
+    //     background-image: url(/assets/images/carousel_background.png);
+    //     background-repeat: no-repeat;
+    // }
+    .sub-line{
+        height: 1px;
+        border: 1px solid #fff;
+        position: relative;
+        z-index: 100;
+        top: 364px;
+    }
+    .carousel{
+        max-width: 100%;
+        position: absolute;
+        z-index: 10;
+        // top: 100px;
+        left: 0;
+        right: 0;
+        padding-top: 144px;
+        padding-left: 80px;
+        padding-right: 80px;
+        background-image: url(/assets/images/carousel_background.png);
+        background-repeat: no-repeat;
+
+        .horizontal-line{
+            width: 100%;
+            height: 40px;
+            @include gradient-x($primary-200, $primary-600);
+            margin-bottom: 8px;
+        }
+        .carouselTitle-cn{
+            width: 240px;
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+        .carouselTitle-en{
+            width: 669px;
+            font-size: 48px;
+            margin-bottom: 48px;
+
+        }
+        .swiper {
+            width: 90%;
+            height: 100%;
+            // padding: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            // height: 300px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 560px;
+        }
+        .swiper-button-next{
+            position: relative !important; 
+            left: 80%;
+        }
+        
+        
+    }
+}
+// .top{
+// 	height: 400px;
+// 	background: pink;
+// 	z-index: 1;
+	
+// }
+// .down{
+// 	height: 400px;
+// 	background: gray;
+// 	z-index: 2;
+// 	top: -550px;
+// }
+// .down2{
+// 	height: 400px;
+// 	background: #000;
+// 	top: -550px;
+// }
+// .line1{
+// 	width: 100%;
+// 	height: 5px;
+// 	border-bottom: 1px solid #000;
+// 	transform:rotate(5deg);
+// 	padding-top: 250px;
+// 	z-index: 4;
+// }
+// .line2{
+// 	width: 100%;
+// 	border-bottom: 1px solid #000;
+// 	transform:rotate(-5deg);
+// 	padding-top: 250px;
+// 	z-index: 4;
+// }
+// .boxGroup{
+// 	max-width: 100%;
+// 	height: auto;
+// 	background-color: transparent;
+// 	top: -350px;
+// 	z-index: 100;
+// }
+// .box1{
+// 	height: 100%;
+// 	background-color: transparent;
+// }
+// .bo1Ai{
+	
+// }
+
+// .box2{
+// 	height: 100%;
+// 	background-color: transparent;
+// 	padding-top: 70px;
+// }
+// .box3{
+// 	height: 100%;
+// 	background-color: transparent;
+// 	padding-top: 70px;
+// }
+// .box4{
+// 	height: 100%;
+// 	background-color: transparent;
+// 	padding-top: 10px;
+// }
+
+
+// .imgGroup :nth-child(1){
+//     position: absolute;
+//     top: 308px;
+//     left: -20%;
+// }
+// .imgGroup :nth-child(2){
+//     top: 404px;
+//     left: 20%;
+// }
+// .imgGroup :nth-child(3){
+//     top: 404px;
+//     left: 55%;
+// }
+// .imgGroup :nth-child(4){
+//     top: 308px;
+//     right: -20%;
+// }
+// .bannerAi{
+//     max-width: 100%;
+// }
+// .testColor{
+//   @include gradient-x;
+// }
+// div{
+//   width: 150px;
+//   height: 300px;
+//   @include gradient-y(#7000FF,#11002D);
+// }
+// body{
+//   @include radial-gradient(#28085c, #000000);
+// }
