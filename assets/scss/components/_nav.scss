@@ -50,6 +50,7 @@
 .navbar {
     &-dropdown {
         top: 76px;
+        z-index: 1;
     }
     .navbar-toggler {
         width: 44px;

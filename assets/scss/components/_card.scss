@@ -1,0 +1,15 @@
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+.aiintro-card-content {
+    background-color: #000;
+    transition: 0.5s;
+    &:hover {
+        background-color: #00000080;
+    }
+}
+
+.number {
+    font-size: 128px;
+}

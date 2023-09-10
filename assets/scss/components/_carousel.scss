@@ -1,0 +1,157 @@
+// 輪播圖片
+.carousel{
+    
+    .swiper {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+    /*去除默認樣式*/
+    .swiper-button-prev::after{
+        display: none;
+    }
+    .swiper-button-next::after{
+        display: none;
+    }
+    /*自定義*/
+    .swiper-button-prev{
+        width: 180px;
+        margin-left: 68px;
+        position: absolute;
+        top: 62%;
+        z-index: 100;
+
+        @media (max-width: 1800px) {
+            width: 130px;
+            margin-left: 38px;
+        }
+        @media (max-width: 1700px) {
+            width: 110px;
+            margin-left: 18px;
+
+        }
+        @media (max-width: 1600px) {
+            display: none;
+        }
+        
+    }
+    .swiper-button-next{
+        width: 180px;
+        margin-right: 68px;
+        position: absolute;
+        top: 62%;
+        z-index: 100;
+        
+        @media (max-width: 1800px) {
+            width: 130px;
+            margin-right: 38px;
+        }
+        @media (max-width: 1700px) {
+            width: 110px;
+            margin-right: 18px;
+
+        }
+        @media (max-width: 1600px) {
+            display: none;
+        }
+
+    }
+
+    .carouselText{
+        text-align: right;
+        left: 63%;
+
+        @media (max-width: 1399.98px){
+            left: 68%;
+        }
+        @media (max-width: 1199.98px){
+            left: 72%;
+        }
+        @media (max-width: 991.98px){
+            width: 400px;
+            text-align: left;
+            left: 0;
+            bottom: 5%;
+            margin-left: 15%;
+        }
+        @media (max-width: 767.98px){
+            width: 319px;
+            margin-left: 5%;
+        }
+
+        .carouselImgNumber{
+            font-size: 96px;
+
+            // *不知道為什麼在_scarouse.scss會一直出現Undefined mixin，但是在index.scss使用時沒有問題，所以先用回@media
+            // @include lg_desktops{
+            //     font-size: 48px;
+            // }
+            @media (max-width: 1399.98px){
+                font-size: 48px;
+            }
+            
+        }
+        .carouselImgTitle{
+            font-size: 32px;
+
+            @media (max-width: 1399.98px){
+                font-size: 28px;
+            }
+            @media (max-width: 1199.98px) {
+                font-size: 24px;
+            }
+        }
+    }
+}
+// share-swiper
+.share {
+    .share-swiper {
+        .swiper-wrapper {
+        margin-bottom: 0;
+        height: 416px;
+        }
+    }
+    .swiper-scrollbar {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    .swiper-scrollbar-drag {
+        background: #ffffff !important;
+    }
+    .share-scroll {
+        margin-bottom: 124px;
+    }
+}
+
+.share {
+    &-card {
+        // min-width: 416px;
+        padding: 40px;
+        background-color: #380c7e;
+        color: #ffffff;
+        min-height: 351px;
+    }
+}
+.share-card{
+
+    @media (mix-width: 768px){
+        margin-bottom: 24px;
+    }
+}
