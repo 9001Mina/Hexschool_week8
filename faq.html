@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+    <script type="module" crossorigin src="/Hexschool_week8/assets/main-ea5b1030.js"></script>
+    <link rel="stylesheet" href="/Hexschool_week8/assets/main-b97d38af.css">
+  </head>
+  <body>
+    <!-- 之後在w-100前面加上 position-fixed  -->
+<div class="w-100">
+    <!-- 原本position-absolute前面有navbar-border  -->
+    <div class="navbar-border position-absolute bg-white start-0 end-0 bottom-0"></div>
+    <nav class="navbar navbar-expand-lg py-3 bg-parimary">
+        <div class="container d-flex align-items-center justify-content-lg-start">
+            <!-- LOGO -->
+            <h1><a class="navbar-brand font-shrikhand text-white font-italic p-0" href="#">ALPHABOX+</a></h1>
+
+            <!-- 下拉選單 -->
+            <div class="navbar-dropdown position-lg-static position-absolute start-0 end-0 flex-lg-grow-1">
+                <div class="collapse navbar-collapse navbar-bg" id="navbarSupportedContent">
+                <!-- PC navbar 中間 -->
+                    <ul class="navbar-nav mx-lg-auto me-auto mb-2 mb-lg-0 gap-2 pt-4 pt-lg-0 gap-lg-4">
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" aria-current="page" href="#">產品</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="#">最新消息</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="#">聯絡我們</a>
+                        </li>
+                        </ul>
+                        <!-- PC navbar 右側 -->
+                        <ul class="navbar-nav gap-2 pb-4 pb-lg-0 gap-lg-2">
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="#">註冊</a>
+                        </li>
+                        <li class="nav-item me-lg-2">
+                            <a class="nav-link text-white text-center" href="#">登入</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link btn rounded-1 text-black text-center bg-white py-2 px-4" href="#">
+                            <i class="material-symbols-outlined align-bottom me-1">point_scan</i>
+                            訂閱
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 漢堡按鈕 -->
+            <button class="navbar-toggler border-0 d-flex d-lg-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="icon-custom">
+                    <span class="icon-line"></span>
+                    <span class="icon-line"></span>
+                    <span class="icon-line"></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+</div>
+    <div class="faqBg">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="faqBlock-title text-black">
+              <p>FAQ</p>
+            </div>
+            <div class="faqSub-line"></div>
+            <div class="faqBlock d-md-flex">
+              <div class="faqBlock-class col-md-4">
+                <ul class="list-unstyled">
+                  <li class="mb-3"><a href="#" class="text-black">ALPHABOX+ 使用問題</a></li>
+                  <li class="mb-3"><a href="#" class="text-black">訂購與運送</a></li>
+                  <li><a href="#" class="text-black">產品保養與維修</a></li>
+                </ul>
+              </div>
+              <div class="faqBlock-accordion col-md-7">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        ALPHABOX+ 的使用方式是什麼？
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        ALPHABOX+ 需要什麼樣的環境來使用？
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        ALPHABOX+ 支援哪些語言？
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading4">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                        ALPHABOX+ 的軟體更新方式為何？
+                      </button>
+                    </h2>
+                    <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading5">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                        購買 ALPHABOX+ 後的售後服務如何？
+                      </button>
+                    </h2>
+                    <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading6">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                        ALPHABOX+ 與其他智能家居設備的相容性如何？
+                      </button>
+                    </h2>
+                    <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="content">
+                    <div class="d-md-block d-none">
+                        <a class="h1 font-shrikhand text-black font-italic p-0" href="#">ALPHABOX+</a>
+                        <p class="fw-bold fs-6">Copyright © 2023 Hexschool.</p>
+                    </div>
+                    <a class="h1 font-shrikhand text-black font-italic p-0 mb-2 d-md-none d-block" href="#">ALPHABOX+</a>
+                    <span class="material-symbols-outlined f-60 fw-bold text-black mb-2">emergency</span>
+                    <ul class="list-unstyled d-flex flex-column flex-md-row m-0">
+                        <li class="me-md-4 mb-md-0 mb-2">關於我們</li>
+                        <li class="me-md-4 mb-md-0 mb-2">產品資訊</li>
+                        <li class="me-md-4 mb-md-0 mb-2">常見問題</li>
+                        <li class="mb-2">隱私政策</li>
+                    </ul>
+                    <p class="fw-bold fs-6 d-md-none d-block">Copyright © 2023 Hexschool.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+  </body>
+</html>
